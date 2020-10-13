@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="asset_id" type="hidden" filter="unset" />
+
+		<field name="cacheUrl"  type="text" class="readonly urldisplay" label="COM_FORM2CONTENTKMLFEEDS_CACHEDURL"
+			description ="COM_FORM2CONTENTKMLFEEDS_REGULAR_RENDERING" size="50" default="" 
+			readonly="true" />
+			
+		<field name="renderUrl"  type="text" class="readonly urldisplay" label="COM_FORM2CONTENTKMLFEEDS_URL"
+			description ="COM_FORM2CONTENTKMLFEEDS_FORCED_RENDERING" size="50" default="" 
+			readonly="true" />
+
+		<field name="title" type="text" label="COM_FORM2CONTENTKMLFEEDS_TITLE" description="COM_FORM2CONTENTKMLFEEDS_TITLE_DESC" 
+			class="inputbox" size="60" maxlength="200" required="true" />
+
+		<field name="alias" type="text" label="COM_FORM2CONTENTKMLFEEDS_ALIAS" description="COM_FORM2CONTENTKMLFEEDS_ALIAS_DESC" 
+			class="inputbox" size="60" maxlength="200" required="false" />
+			
+		<field name="contenttype"  type="text" class="readonly" label="COM_FORM2CONTENTKMLFEEDS_CONTENTTYPE"
+			description ="COM_FORM2CONTENTKMLFEEDS_CONTENTTYPE_DESC" size="100" default="0" 
+			readonly="true"  />
+
+		<field name="creator"  type="text" class="readonly" label="COM_FORM2CONTENTKMLFEEDS_CREATED_BY"
+			description ="COM_FORM2CONTENTKMLFEEDS_CREATED_BY_DESC" size="100" default="0" 
+			readonly="true"  />
+								
+		<field name="plm_method" type="radio" label="COM_FORM2CONTENTKMLFEEDS_PLACEMARKER_METHOD" default="0" 
+			description="COM_FORM2CONTENTKMLFEEDS_PLACEMARKER_METHOD_DESC" class="btn-group">
+			<option	value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+				
+		<field name="title_field" type="sql"
+			label="COM_FORM2CONTENTKMLFEEDS_TITLE_FIELD" description="COM_FORM2CONTENTKMLFEEDS_TITLE_FIELD_DESC"
+			query="select id, title from #__f2c_projectfields WHERE fieldtypeid IN (%s) AND projectid = %d"
+			key_field="id" value_field="title">
+			<option value="-1">COM_FORM2CONTENTKMLFEEDS_ARTICLE_TITLE</option>
+		</field>
+
+		<field name="latitude_field" type="sql"
+			label="COM_FORM2CONTENTKMLFEEDS_LATITUDE_FIELD" description="COM_FORM2CONTENTKMLFEEDS_LATITUDE_FIELD_DESC"
+			query="select id, title from #__f2c_projectfields WHERE fieldtypeid IN (%s) AND projectid = %d"
+			key_field="id" value_field="title">
+		</field>
+
+		<field name="longitude_field" type="sql"
+			label="COM_FORM2CONTENTKMLFEEDS_LONGITUDE_FIELD" description="COM_FORM2CONTENTKMLFEEDS_LONGITUDE_FIELD_DESC"
+			query="select id, title from #__f2c_projectfields WHERE fieldtypeid IN (%s) AND projectid = %d"
+			key_field="id" value_field="title">
+		</field>
+		
+		<field name="template" type="F2cTemplate" label="COM_FORM2CONTENTKMLFEEDS_DESCRIPTION_TEMPLATE" description="COM_FORM2CONTENTKMLFEEDS_DESCRIPTION_TEMPLATE_DESC"
+			size="75" />
+
+		<field name="plm_template" type="F2cTemplate" label="COM_FORM2CONTENTKMLFEEDS_PLACEMARKER_TEMPLATE" description="COM_FORM2CONTENTKMLFEEDS_PLACEMARKER_TEMPLATE_DESC"
+			size="75" />
+		
+		<field name="icon_url" type="text" label="COM_FORM2CONTENTKMLFEEDS_ICON_URL" description="COM_FORM2CONTENTKMLFEEDS_ICON_URL_DESC" 
+			class="inputbox" size="100" maxlength="255" required="false" />
+			
+		<field name="cache_duration" type="text" label="COM_FORM2CONTENTKMLFEEDS_CACHE_DURATION" description="COM_FORM2CONTENTKMLFEEDS_CACHE_DURATION_DESC" 
+			class="inputbox" size="10" maxlength="6" required="false" default="900" />
+			
+		<field name="extra_hdr_data" type="textarea"
+			label="COM_FORM2CONTENTKMLFEEDS_EXTRA_HEADER_DATA" description="COM_FORM2CONTENTKMLFEEDS_EXTRA_HEADER_DATA_DESC"
+			class="inputbox" style="width:400px" rows="10" cols="40" />
+
+		<field name="extra_plm_data" type="textarea"
+			label="COM_FORM2CONTENTKMLFEEDS_EXTRA_PLACEMARK_DATA" description="COM_FORM2CONTENTKMLFEEDS_EXTRA_PLACEMARK_DATA_DESC"
+			class="inputbox" style="width:400px" rows="10" cols="40" />
+		
+		<field name="project_id" type="hidden" />
+		<field name="published" type="hidden" />
+		<field name="created_by" type="hidden" />
+		<field name="created" type="hidden" />
+		<field name="modified" type="hidden" />
+		
+	</fieldset>										
+</form>	

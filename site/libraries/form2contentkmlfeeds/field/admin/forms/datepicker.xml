@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="field_id" type="hidden" />
+	    
+		<field name="fieldname"  type="text" class="readonly" label="COM_FORM2CONTENTKMLFEEDS_FIELDNAME"
+			description ="COM_FORM2CONTENTKMLFEEDS_FIELDNAME" readonly="true"  />
+					    
+		<fields name="settings">
+			<field name="dat_operator" type="list" label="COM_FORM2CONTENTKMLFEEDS_OPERATOR" description ="COM_FORM2CONTENTKMLFEEDS_OPERATOR_DESC">
+				<option	value="LT">&lt;</option>
+				<option value="LTEQ">&lt;=</option>
+				<option value="EQ">=</option>
+				<option value="GTEQ">&gt;=</option>
+				<option value="GT">&gt;</option>
+			</field>
+			<field name="dat_date" type="calendar" label="COM_FORM2CONTENTKMLFEEDS_DATE" description="COM_FORM2CONTENTKMLFEEDS_DATE_DESC" 
+				   class="inputbox" size="20" format="%Y-%m-%d" filter="user_utc" />
+		</fields>
+	</fieldset>										
+</form>	

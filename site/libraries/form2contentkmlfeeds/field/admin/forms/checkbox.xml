@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+	    <field name="field_id" type="hidden" />
+	    
+		<field name="fieldname"  type="text" class="readonly" label="COM_FORM2CONTENTKMLFEEDS_FIELDNAME"
+			description ="COM_FORM2CONTENTKMLFEEDS_FIELDNAME" readonly="true"  />
+	    				
+	    <fields name="settings">
+			<field name="chk_filter"  type="checkbox" label="COM_FORM2CONTENTKMLFEEDS_FILTER_VALUE"
+				description ="COM_FORM2CONTENTKMLFEEDS_FILTER_VALUE_DESC" value="1" />
+		</fields>
+	</fieldset>	
+										
+</form>	

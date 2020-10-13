@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+		
+		<field name="title" type="text" label="COM_FORM2CONTENTKMLFEEDS_TITLE" description="COM_FORM2CONTENTKMLFEEDS_TITLE_DESC" 
+			class="inputbox" size="60" maxlength="200" required="true" />
+					
+		<field name="feed_id" type="hidden" />			
+		<field name="field_type_id" type="hidden" />				
+	</fieldset>	
+										
+</form>	

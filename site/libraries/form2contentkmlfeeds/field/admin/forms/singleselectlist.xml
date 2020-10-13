@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="field_id" type="hidden" />
+	    	
+		<field name="fieldname"  type="text" class="readonly" label="COM_FORM2CONTENTKMLFEEDS_FIELDNAME"
+			description ="COM_FORM2CONTENTKMLFEEDS_FIELDNAME" readonly="true"  />
+				
+		<fields name="settings">
+			<field name="ssl_values" type="F2cMultiSelect" label="COM_FORM2CONTENTKMLFEEDS_VALUES" description="COM_FORM2CONTENTKMLFEEDS_VALUES_DESC" 
+				multiple="true" style="height: 250px;" />
+		</fields>	
+	</fieldset>											
+</form>	
